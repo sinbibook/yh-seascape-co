@@ -1,0 +1,131 @@
+<header id="header" class="header">
+  <div class="hd_inner">
+    <div class="logo">
+      <a href="./index.html">
+        <img src="data:," alt="" data-logo-image />
+        <!-- 로고 이미지가 없을 때만 노출 (K·J·PET 템플릿과 같은 규약)
+             .logo_text = 영문 숙소명(없으면 한글) / .logo_sub = 한글 숙소명(영문과 같으면 숨김) -->
+        <span class="logo_text" data-property-name-en style="display: none"></span>
+        <span class="logo_sub" data-property-name style="display: none"></span>
+      </a>
+    </div>
+    <div class="hd_lnb">
+      <ul>
+        <li class="depth1">
+          <a href="./main.html" class="depth1_a"><span>ABOUT</span></a>
+          <ul class="depth_box">
+            <li><a href="./main.html">펜션소개</a></li>
+            <li><a href="./directions.html">오시는길</a></li>
+          </ul>
+        </li>
+        <li class="depth1">
+          <!-- data-rooms-link : layoutMap 켜짐 → layout-map.html / 꺼짐 → 첫 객실 상세 -->
+          <a href="./layout-map.html" class="depth1_a" data-rooms-link><span>ROOMS</span></a>
+          <ul class="depth_box" data-rooms-submenu>
+            <li><a href="./layout-map.html" data-menu-id="layout-map">미리보기</a></li>
+          </ul>
+        </li>
+        <li class="depth1">
+          <a href="./facility.html" class="depth1_a"><span>SPECIAL</span></a>
+          <ul class="depth_box" data-special-submenu></ul>
+        </li>
+        <li class="depth1">
+          <a href="#!" class="depth1_a" target="_blank" data-booking-link>
+            <span>RESERVE</span>
+          </a>
+          <ul class="depth_box">
+            <li><a href="#!" target="_blank" data-booking-link>예약하기</a></li>
+            <li><a href="./reservation.html">이용안내</a></li>
+          </ul>
+        </li>
+        <li class="depth1" data-travel-menu>
+          <a href="./nearby-attractions.html" class="depth1_a"><span>TRAVEL</span></a>
+          <ul class="depth_box">
+            <li>
+              <a href="./nearby-attractions.html" data-menu-id="nearby-attractions">주변여행지</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="hd_right">
+      <!-- MAPPER: 네이버 ← homepage.socialLinks.blog / 인스타그램 ← homepage.socialLinks.instagram -->
+      <!-- 값 없으면 링크 숨김, 둘 다 없으면 래퍼째 숨김 (기본 숨김). 479px 이하는 aside(.aside_sns)로 -->
+      <div class="hd_sns_btn" data-social-wrap style="display: none">
+        <a href="#!" data-homepage-socialLinks-blog style="display: none">
+          <img src="images/n_logo.png" alt="네이버" />
+        </a>
+        <a href="#!" data-homepage-socialLinks-instagram style="display: none">
+          <img src="images/insta_logo.png" alt="인스타그램" />
+        </a>
+      </div>
+      <div class="btn_hd_res" data-ybs-wrap>
+        <a href="#!" target="_blank" data-ybs-button>
+          <img src="images/common/ybs.png" alt="예약아이콘" />
+          YBS
+        </a>
+      </div>
+      <div class="btn_hd_res">
+        <div class="ybs_btn">
+          <img src="images/common/price.png" alt="특가아이콘" />
+        </div>
+        <a href="#!" target="_blank" data-booking-link>
+          <img src="images/common/reser.png" alt="예약아이콘" />
+          Reservation
+        </a>
+      </div>
+      <div class="btn_menu"><img src="images/common/m_menu.png" alt="메뉴" /></div>
+    </div>
+  </div>
+  <div class="hd_lnb_bg"></div>
+
+  <div class="aside">
+    <a
+      href="#"
+      class="btn_close"
+      style="background-image: url('images/common/x.png')"
+      aria-label="닫기"
+    ></a>
+    <div class="aisde_inner">
+      <div class="aside_box">
+        <div class="depth1">ABOUT</div>
+        <ul class="depth_list">
+          <li><a href="./main.html">펜션소개</a></li>
+          <li><a href="./directions.html">오시는길</a></li>
+        </ul>
+
+        <div class="depth1">ROOMS</div>
+        <ul class="depth_list" data-rooms-submenu>
+          <li><a href="./layout-map.html" data-menu-id="layout-map">미리보기</a></li>
+        </ul>
+
+        <div class="depth1">SPECIAL</div>
+        <ul class="depth_list" data-special-submenu></ul>
+
+        <div class="depth1">RESERVE</div>
+        <ul class="depth_list">
+          <li><a href="#!" target="_blank" data-booking-link>예약하기</a></li>
+          <li><a href="./reservation.html">이용안내</a></li>
+        </ul>
+
+        <div class="depth1" data-travel-menu>TRAVEL</div>
+        <ul class="depth_list" data-travel-menu>
+          <li>
+            <a href="./nearby-attractions.html" data-menu-id="nearby-attractions">주변여행지</a>
+          </li>
+        </ul>
+
+        <!-- 479px 이하 전용: 헤더 줄에 자리가 없어 aside 맨 아래에 둔다 (CSS 가 그 폭에서만 노출) -->
+        <!-- MAPPER: homepage.socialLinks.blog / .instagram — 값 없으면 링크·래퍼 숨김 (기본 숨김) -->
+        <div class="aside_sns" data-social-wrap style="display: none">
+          <a href="#!" data-homepage-socialLinks-blog style="display: none">
+            <img src="images/n_logo.png" alt="네이버" />
+          </a>
+          <a href="#!" data-homepage-socialLinks-instagram style="display: none">
+            <img src="images/insta_logo.png" alt="인스타그램" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

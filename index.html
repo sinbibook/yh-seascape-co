@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      html.tpl-loading body {
+        opacity: 0;
+      }
+      body {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      }
+    </style>
+    <script>
+      document.documentElement.classList.add('tpl-loading');
+      window.__tplReveal = function () {
+        document.documentElement.classList.remove('tpl-loading');
+      };
+      setTimeout(function () {
+        window.__tplReveal && window.__tplReveal();
+      }, 3000);
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <title data-page-title>삼척 바다풍경 펜션 - 홈</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" type="text/css" href="styles/theme.css" />
+    <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/popup.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="삼척 바다풍경 펜션 - 홈" />
+  <meta property="og:description" content="강원도 삼척의 바다풍경은 푸른 바닷가와 장호항 인근 위치하며 개별바베큐와 다양한 부대시설이 있습니다. 커플,가족과 함께 즐거운 시간 보내세요." />
+  <meta property="og:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/08/05/OzUPyRZuqkK7.jpg" />
+  <meta property="og:url" content="https://yh-seascape.co.kr" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="삼척 바다풍경 펜션 - 홈" />
+  <meta name="twitter:description" content="강원도 삼척의 바다풍경은 푸른 바닷가와 장호항 인근 위치하며 개별바베큐와 다양한 부대시설이 있습니다. 커플,가족과 함께 즐거운 시간 보내세요." />
+  <meta name="twitter:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/08/05/OzUPyRZuqkK7.jpg" />
+  <meta name="naver-site-verification" content="3ae46b9710bc928120c6d5430ba495fc40bb2025" />
+  <meta name="google-site-verification" content="hLgP5dDdA_jUv01Na1B9aXRZb0theMCSDOXtk_FMddA" />
+</head>
+
+  <body oncontextmenu="return false;" onselectstart="return false" ondragstart="return false;">
+    <div id="wrap">
+      <div id="header-wrap"></div>
+
+      <div id="container">
+        <!-- 히어로 비주얼 -->
+        <div class="main_visual visual">
+          <div class="visual_box">
+            <div class="visual_txt">
+              <strong data-index-hero-title></strong>
+              <p data-index-hero-description></p>
+            </div>
+            <div class="swiper-container">
+              <div class="swiper-wrapper" data-index-hero-slides></div>
+              <div class="swiper-button-prev"><img src="images/common/arrow_left.png" alt="prev" /></div>
+              <div class="swiper-button-next"><img src="images/common/arrow_right.png" alt="next" /></div>
+            </div>
+          </div>
+        </div>
+
+        <section id="content" class="main">
+          <!-- 객실 미리보기 -->
+          <div class="main_room">
+            <div class="inner">
+              <div class="title_box">
+                <p data-index-room-eyebrow></p>
+                <h3 data-index-room-title></h3>
+              </div>
+              <div class="room_list">
+                <div class="img_mouse"><img src="data:," alt="" /></div>
+                <div class="swiper-container">
+                  <div class="swiper-wrapper" data-index-room-slides></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 배너 슬라이더 -->
+          <div class="main_sld_bnr">
+            <div class="inner">
+              <div class="swiper-container">
+                <div class="swiper-wrapper" data-index-banner-slides></div>
+                <div class="swiper-button-prev"><img src="images/common/arrow_left.png" alt="prev" /></div>
+                <div class="swiper-button-next"><img src="images/common/arrow_right.png" alt="next" /></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 좌측 텍스트 -->
+          <div class="main_txt main_txt_l">
+            <strong>with tasteful interiors<br />a wonderful day</strong>
+            <p class="txt_transform" data-property-name-en></p>
+          </div>
+
+          <!-- 특별 시설 -->
+          <div class="main_special inner">
+            <div class="special_in">
+              <div class="title_box">
+                <h3 data-index-special-title></h3>
+                <div class="img_mouse"><img src="data:," alt="" /></div>
+                <p data-index-special-description></p>
+              </div>
+              <div class="special_menu">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper" data-index-special-list></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 우측 텍스트 -->
+          <div class="main_txt main_txt_r">
+            <strong>This place provides<br />the best time for those who are staying</strong>
+            <p class="txt_transform" data-property-name-en></p>
+          </div>
+
+          <!-- 직접 메뉴 -->
+          <div class="main_menu">
+            <div class="title_box inner">
+              <h3 data-index-menu-title></h3>
+              <p data-index-menu-description></p>
+            </div>
+            <!-- data-* 속성 : data-index-menu-images
+                 pages.index.sections[0].signature.images[isSelected] 3장
+                 (원본 .menu_li 의 실제 사진. signature 는 이 템플릿에서 다른 용도가 없다) -->
+            <ul class="menu_li inner" data-index-menu-images>
+              <li>
+                <a href="./reservation.html"></a>
+                <div class="img"><img src="data:," alt="" /></div>
+                <div class="box">
+                  <div class="txt">
+                    <p>이용안내<br />Reservation</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="./main.html"></a>
+                <div class="img"><img src="data:," alt="" /></div>
+                <div class="box">
+                  <div class="txt">
+                    <p>펜션소개<br />About</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="./directions.html"></a>
+                <div class="img"><img src="data:," alt="" /></div>
+                <div class="box">
+                  <div class="txt">
+                    <p>오시는길<br />Traffic</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 와이드 배너 -->
+          <div class="main_wide" data-index-wide-bg>
+            <div>
+              <strong data-index-wide-title></strong>
+              <p data-index-wide-description></p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div id="footer-wrap"></div>
+    </div>
+
+    <div id="popup-container"></div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/image-helpers.js"></script>
+    <script src="js/preview-handler.js"></script>
+    <script src="js/data-mapper/core/base-mapper.js"></script>
+    <script src="js/data-mapper/pages/header-footer-mapper.js"></script>
+    <script src="js/data-mapper/pages/index-mapper.js"></script>
+    <script src="js/header-footer-loader.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/pages/index.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>

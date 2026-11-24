@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      html.tpl-loading body {
+        opacity: 0;
+      }
+      body {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      }
+    </style>
+    <script>
+      document.documentElement.classList.add('tpl-loading');
+      window.__tplReveal = function () {
+        document.documentElement.classList.remove('tpl-loading');
+      };
+      setTimeout(function () {
+        window.__tplReveal && window.__tplReveal();
+      }, 3000);
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <title data-page-title>삼척 바다풍경 펜션 - 예약안내</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" type="text/css" href="styles/theme.css" />
+    <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/popup.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="삼척 바다풍경 펜션 - 예약안내" />
+  <meta property="og:description" content="강원도 삼척의 바다풍경은 푸른 바닷가와 장호항 인근 위치하며 개별바베큐와 다양한 부대시설이 있습니다. 커플,가족과 함께 즐거운 시간 보내세요." />
+  <meta property="og:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/08/05/OzUPyRZuqkK7.jpg" />
+  <meta property="og:url" content="https://yh-seascape.co.kr" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="삼척 바다풍경 펜션 - 예약안내" />
+  <meta name="twitter:description" content="강원도 삼척의 바다풍경은 푸른 바닷가와 장호항 인근 위치하며 개별바베큐와 다양한 부대시설이 있습니다. 커플,가족과 함께 즐거운 시간 보내세요." />
+  <meta name="twitter:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/08/05/OzUPyRZuqkK7.jpg" />
+  <meta name="naver-site-verification" content="3ae46b9710bc928120c6d5430ba495fc40bb2025" />
+  <meta name="google-site-verification" content="hLgP5dDdA_jUv01Na1B9aXRZb0theMCSDOXtk_FMddA" />
+</head>
+
+  <body oncontextmenu="return false;" onselectstart="return false" ondragstart="return false;">
+    <div id="wrap">
+      <div id="header-wrap"></div>
+      <div id="container">
+        <!-- 서브 히어로 -->
+        <div class="sub_visual_wide visual">
+          <div class="visual_box">
+            <div class="visual_txt">
+              <span data-property-name-en-caps></span>
+              <strong>RESERVATION</strong>
+              <p>This place provides the best time for those who are staying</p>
+              <div class="sub_cate_wrap">
+                <ul>
+                  <li><a href="#!" target="_blank" data-booking-link>예약하기</a></li>
+                  <li class="on"><a href="./reservation.html">이용안내</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-container">
+              <div class="swiper-wrapper" data-reservation-hero-slides></div>
+            </div>
+          </div>
+        </div>
+
+        <section id="content" class="sub_cont sub4_1 sub_reservation">
+          <div class="sub_cont">
+            <div class="title_box">
+              <p data-reservation-eyebrow></p>
+            </div>
+
+            <!-- 원본은 dl 을 두 벌로 나눈다. CSS 의 dl + dl {margin-top:130px} 가
+                 두 안내 블록 사이 여백을 만들기 때문에 한 dl 안에 합치면 안 된다. -->
+            <dl class="inner">
+              <dt class="title_box2">
+                <h4>Basic info</h4>
+                <p>Reservation Information</p>
+              </dt>
+              <dd>
+                <div class="img" data-reservation-info-image></div>
+                <div class="txt" data-reservation-info></div>
+              </dd>
+            </dl>
+
+            <dl class="inner">
+              <dt class="title_box2">
+                <h4>Refund Info</h4>
+                <p>Reservation Information</p>
+              </dt>
+              <dd>
+                <div class="img" data-reservation-refund-image></div>
+                <div class="txt" data-reservation-refund></div>
+              </dd>
+            </dl>
+          </div>
+        </section>
+      </div>
+
+      <div id="footer-wrap"></div>
+    </div>
+
+    <div id="popup-container"></div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/image-helpers.js"></script>
+    <script src="js/preview-handler.js"></script>
+    <script src="js/data-mapper/core/base-mapper.js"></script>
+    <script src="js/data-mapper/pages/header-footer-mapper.js"></script>
+    <script src="js/data-mapper/pages/reservation-mapper.js"></script>
+    <script src="js/header-footer-loader.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/pages/reservation.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>

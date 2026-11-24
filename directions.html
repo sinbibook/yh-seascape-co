@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      html.tpl-loading body {
+        opacity: 0;
+      }
+      body {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      }
+    </style>
+    <script>
+      document.documentElement.classList.add('tpl-loading');
+      window.__tplReveal = function () {
+        document.documentElement.classList.remove('tpl-loading');
+      };
+      setTimeout(function () {
+        window.__tplReveal && window.__tplReveal();
+      }, 3000);
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <title data-page-title>삼척 바다풍경 펜션 - 오시는길</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" type="text/css" href="styles/theme.css" />
+    <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/popup.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="삼척 바다풍경 펜션 - 오시는길" />
+  <meta property="og:description" content="강원도 삼척의 바다풍경은 푸른 바닷가와 장호항 인근 위치하며 개별바베큐와 다양한 부대시설이 있습니다. 커플,가족과 함께 즐거운 시간 보내세요." />
+  <meta property="og:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/08/05/OzUPyRZuqkK7.jpg" />
+  <meta property="og:url" content="https://yh-seascape.co.kr" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="삼척 바다풍경 펜션 - 오시는길" />
+  <meta name="twitter:description" content="강원도 삼척의 바다풍경은 푸른 바닷가와 장호항 인근 위치하며 개별바베큐와 다양한 부대시설이 있습니다. 커플,가족과 함께 즐거운 시간 보내세요." />
+  <meta name="twitter:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/08/05/OzUPyRZuqkK7.jpg" />
+  <meta name="naver-site-verification" content="3ae46b9710bc928120c6d5430ba495fc40bb2025" />
+  <meta name="google-site-verification" content="hLgP5dDdA_jUv01Na1B9aXRZb0theMCSDOXtk_FMddA" />
+</head>
+
+  <body oncontextmenu="return false;" onselectstart="return false" ondragstart="return false;">
+    <div id="wrap">
+      <div id="header-wrap"></div>
+
+      <div id="container">
+        <!-- 서브 히어로 -->
+        <div class="sub_visual_wide visual">
+          <div class="visual_box">
+            <div class="visual_txt">
+              <span data-property-name-en-caps></span>
+              <strong>Location</strong>
+              <p data-directions-hero-description></p>
+              <div class="sub_cate_wrap">
+                <ul>
+                  <li><a href="./main.html">펜션소개</a></li>
+                  <li class="on"><a href="./directions.html">오시는길</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-container">
+              <div class="swiper-wrapper" data-directions-hero-slides></div>
+            </div>
+          </div>
+        </div>
+
+        <section id="content" class="sub_cont sub1_3 sub_about">
+          <div class="sub_cont">
+            <div class="title_box">
+              <p data-directions-eyebrow>Welcome to Pension</p>
+              <h3 data-directions-body-title></h3>
+            </div>
+
+            <div class="map_box inner">
+              <!-- 원본은 daum roughmap 임베드(고정 key)였으나
+                   숙소별 좌표 매핑을 위해 kakao-maps-sdk 로 교체했다. -->
+              <div class="map">
+                <div id="kakao-map"></div>
+              </div>
+              <div class="info_box">
+                <strong>Address<span data-property-address></span></strong>
+                <dl>
+                  <dt>Direction<span data-directions-notice-title></span></dt>
+                  <dd data-directions-notice></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div id="footer-wrap"></div>
+    </div>
+
+    <div id="popup-container"></div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/image-helpers.js"></script>
+    <script src="js/kakao-maps-sdk.js"></script>
+    <script src="js/preview-handler.js"></script>
+    <script src="js/data-mapper/core/base-mapper.js"></script>
+    <script src="js/data-mapper/pages/header-footer-mapper.js"></script>
+    <script src="js/data-mapper/pages/directions-mapper.js"></script>
+    <script src="js/header-footer-loader.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/pages/directions.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>
